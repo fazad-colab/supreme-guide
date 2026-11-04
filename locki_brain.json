@@ -1,0 +1,75 @@
+{
+    "statut": "Auto-généré par GitHub Actions",
+    "cours": {
+        "cprobl2-2024": {
+            "titre": "CPROBL2-2024.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/CPROBL2-2024.pdf",
+            "description": "Document officiel de référence : CPROBL2-2024.pdf. À étudier pour valider les modules."
+        },
+        "série n1 mécanque du solide 2025": {
+            "titre": "Série N1 mécanque du solide 2025.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Série N1 mécanque du solide 2025.pdf",
+            "description": "Document officiel de référence : Série N1 mécanque du solide 2025.pdf. À étudier pour valider les modules."
+        },
+        "livre-algebre-1": {
+            "titre": "livre-algebre-1.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/livre-algebre-1.pdf",
+            "description": "Document officiel de référence : livre-algebre-1.pdf. À étudier pour valider les modules."
+        },
+        "td informatique de base 1♻️": {
+            "titre": "TD Informatique de base 1♻️.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/TD Informatique de base 1♻️.pdf",
+            "description": "Document officiel de référence : TD Informatique de base 1♻️.pdf. À étudier pour valider les modules."
+        },
+        "tableauperiodique": {
+            "titre": "TableauPeriodique.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/TableauPeriodique.pdf",
+            "description": "Document officiel de référence : TableauPeriodique.pdf. À étudier pour valider les modules."
+        },
+        "corrigé de td d'algorithmes": {
+            "titre": "Corrigé de TD d'algorithmes.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Corrigé de TD d'algorithmes.pdf",
+            "description": "Document officiel de référence : Corrigé de TD d'algorithmes.pdf. À étudier pour valider les modules."
+        },
+        "td 2 analyse 1": {
+            "titre": "TD 2 analyse 1.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/TD 2 analyse 1.pdf",
+            "description": "Document officiel de référence : TD 2 analyse 1.pdf. À étudier pour valider les modules."
+        },
+        "sujet corrigé analyse1.24-25": {
+            "titre": "Sujet_Corrigé_Analyse1.24-25.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Sujet_Corrigé_Analyse1.24-25.pdf",
+            "description": "Document officiel de référence : Sujet_Corrigé_Analyse1.24-25.pdf. À étudier pour valider les modules."
+        },
+        "pdf go topologie1-mm2": {
+            "titre": "PDF_GO_TOPOLOGIE1-MM2.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/PDF_GO_TOPOLOGIE1-MM2.pdf",
+            "description": "Document officiel de référence : PDF_GO_TOPOLOGIE1-MM2.pdf. À étudier pour valider les modules."
+        },
+        "séries 1": {
+            "titre": "Séries_1.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Séries_1.pdf",
+            "description": "Document officiel de référence : Séries_1.pdf. À étudier pour valider les modules."
+        },
+        "coursprob-seance2 031217": {
+            "titre": "CoursPROB-Seance2_031217.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/CoursPROB-Seance2_031217.pdf",
+            "description": "Document officiel de référence : CoursPROB-Seance2_031217.pdf. À étudier pour valider les modules."
+        },
+        "td algorithme": {
+            "titre": "TD algorithme.pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/TD algorithme.pdf",
+            "description": "Document officiel de référence : TD algorithme.pdf. À étudier pour valider les modules."
+        },
+        "fazad (4)": {
+            "titre": "Fazad (4).pdf",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Fazad (4).pdf",
+            "description": "Document officiel de référence : Fazad (4).pdf. À étudier pour valider les modules."
+        }
+    },
+    "expressions_humaines": [
+        "Franchement, bien vu !",
+        "Regarde ce polycopié sur le dépôt, tout est détaillé dedans.",
+        "On lâche rien, les partiels aux Comores se gagnent avec la rigueur !"
+    ]
+}

@@ -1,0 +1,29 @@
+name: Auto-Update Locki Brain
+
+on:
+  push:
+    paths:
+      - '*.pdf' # Se déclenche dès qu'un PDF est ajouté ou modifié
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code du dépôt
+        uses: actions/checkout@v3
+
+      - name: Configurer Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Lancer le script d'analyse
+        run: python parse_pdfs.py
+
+      - name: Sauvegarder automatiquement le nouveau JSON sur GitHub
+        run: |
+          git config --global user.name "Locki Bot"
+          git config --global user.email "bot@omnimath.dev"
+          git add locki_brain.json
+          git commit -m "🤖 Mise à jour automatique du cerveau de Locki via les nouveaux PDF" || exit 0
+          git push

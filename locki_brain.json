@@ -1,105 +1,115 @@
 {
-    "statut": "Auto-généré par GitHub Actions",
+    "statut": "Généré automatiquement avec extraction de texte",
     "cours": {
-        "tableauperiodique": {
+        "tableauperiodique.pdf": {
             "titre": "TableauPeriodique.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/TableauPeriodique.pdf",
-            "description": "Document officiel de référence : TableauPeriodique.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : TableauPeriodique.pdf"
         },
-        "fazad (4)": {
+        "fazad (4).pdf": {
             "titre": "Fazad (4).pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Fazad (4).pdf",
-            "description": "Document officiel de référence : Fazad (4).pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Fazad (4).pdf"
         },
-        "dialogue integral anonyme 18 pages": {
+        "dialogue integral anonyme 18 pages.pdf": {
             "titre": "Dialogue Integral Anonyme 18 Pages.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Dialogue Integral Anonyme 18 Pages.pdf",
-            "description": "Document officiel de référence : Dialogue Integral Anonyme 18 Pages.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Dialogue Integral Anonyme 18 Pages.pdf"
         },
-        "cprobl2-2024": {
+        "cprobl2 2024.pdf": {
             "titre": "CPROBL2-2024.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/CPROBL2-2024.pdf",
-            "description": "Document officiel de référence : CPROBL2-2024.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : CPROBL2-2024.pdf"
         },
-        "série n1 mécanque du solide 2025": {
+        "série n1 mécanque du solide 2025.pdf": {
             "titre": "Série N1 mécanque du solide 2025.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Série N1 mécanque du solide 2025.pdf",
-            "description": "Document officiel de référence : Série N1 mécanque du solide 2025.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Série N1 mécanque du solide 2025.pdf"
         },
-        "pdf go topologie1-mm2": {
+        "pdf go topologie1 mm2.pdf": {
             "titre": "PDF_GO_TOPOLOGIE1-MM2.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/PDF_GO_TOPOLOGIE1-MM2.pdf",
-            "description": "Document officiel de référence : PDF_GO_TOPOLOGIE1-MM2.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : PDF_GO_TOPOLOGIE1-MM2.pdf"
         },
-        "guide d'apprentissage locki ia - mathématiques et informatique": {
+        "guide d'apprentissage locki ia   mathématiques et informatique.pdf": {
             "titre": "Guide d'Apprentissage Locki IA - Mathématiques et Informatique.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Guide d'Apprentissage Locki IA - Mathématiques et Informatique.pdf",
-            "description": "Document officiel de référence : Guide d'Apprentissage Locki IA - Mathématiques et Informatique.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Guide d'Apprentissage Locki IA - Mathématiques et Informatique.pdf"
         },
-        "td informatique de base 1♻️": {
+        "td informatique de base 1♻️.pdf": {
             "titre": "TD Informatique de base 1♻️.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/TD Informatique de base 1♻️.pdf",
-            "description": "Document officiel de référence : TD Informatique de base 1♻️.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : TD Informatique de base 1♻️.pdf"
         },
-        "dialogue et discussions - locki ia": {
+        "dialogue et discussions   locki ia.pdf": {
             "titre": "Dialogue et Discussions - Locki IA.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Dialogue et Discussions - Locki IA.pdf",
-            "description": "Document officiel de référence : Dialogue et Discussions - Locki IA.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Dialogue et Discussions - Locki IA.pdf"
         },
-        "manuel academique et technique integral 18 pages": {
+        "manuel academique et technique integral 18 pages.pdf": {
             "titre": "Manuel Academique et Technique Integral 18 Pages.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Manuel Academique et Technique Integral 18 Pages.pdf",
-            "description": "Document officiel de référence : Manuel Academique et Technique Integral 18 Pages.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Manuel Academique et Technique Integral 18 Pages.pdf"
         },
-        "sujet corrigé analyse1.24-25": {
+        "sujet corrigé analyse1.24 25.pdf": {
             "titre": "Sujet_Corrigé_Analyse1.24-25.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Sujet_Corrigé_Analyse1.24-25.pdf",
-            "description": "Document officiel de référence : Sujet_Corrigé_Analyse1.24-25.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Sujet_Corrigé_Analyse1.24-25.pdf"
         },
-        "td algorithme": {
+        "td algorithme.pdf": {
             "titre": "TD algorithme.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/TD algorithme.pdf",
-            "description": "Document officiel de référence : TD algorithme.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : TD algorithme.pdf"
         },
-        "coursprob-seance2 031217": {
+        "coursprob seance2 031217.pdf": {
             "titre": "CoursPROB-Seance2_031217.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/CoursPROB-Seance2_031217.pdf",
-            "description": "Document officiel de référence : CoursPROB-Seance2_031217.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : CoursPROB-Seance2_031217.pdf"
         },
-        "livre-algebre-1": {
+        "livre algebre 1.pdf": {
             "titre": "livre-algebre-1.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/livre-algebre-1.pdf",
-            "description": "Document officiel de référence : livre-algebre-1.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : livre-algebre-1.pdf"
         },
-        "séries 1": {
+        "screenshot 20260120 154055 shareit lite.jpg": {
+            "titre": "Screenshot_20260120_154055_SHAREit Lite.jpg",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Screenshot_20260120_154055_SHAREit Lite.jpg",
+            "contenu_integral": "Document de référence officiel : Screenshot_20260120_154055_SHAREit Lite.jpg"
+        },
+        "séries 1.pdf": {
             "titre": "Séries_1.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Séries_1.pdf",
-            "description": "Document officiel de référence : Séries_1.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Séries_1.pdf"
         },
-        "td 2 analyse 1": {
+        "td 2 analyse 1.pdf": {
             "titre": "TD 2 analyse 1.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/TD 2 analyse 1.pdf",
-            "description": "Document officiel de référence : TD 2 analyse 1.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : TD 2 analyse 1.pdf"
         },
-        "omnimath - fiche d'exercices de mathématiques": {
+        "omnimath   fiche d'exercices de mathématiques.pdf": {
             "titre": "Omnimath - Fiche d'Exercices de Mathématiques.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Omnimath - Fiche d'Exercices de Mathématiques.pdf",
-            "description": "Document officiel de référence : Omnimath - Fiche d'Exercices de Mathématiques.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Omnimath - Fiche d'Exercices de Mathématiques.pdf"
         },
-        "grand manuel academique et technique interactif": {
+        "screenshot 20251220 122341 all pdf reader.jpg": {
+            "titre": "Screenshot_20251220_122341_All PDF Reader.jpg",
+            "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Screenshot_20251220_122341_All PDF Reader.jpg",
+            "contenu_integral": "Document de référence officiel : Screenshot_20251220_122341_All PDF Reader.jpg"
+        },
+        "grand manuel academique et technique interactif.pdf": {
             "titre": "Grand Manuel Academique et Technique Interactif.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Grand Manuel Academique et Technique Interactif.pdf",
-            "description": "Document officiel de référence : Grand Manuel Academique et Technique Interactif.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Grand Manuel Academique et Technique Interactif.pdf"
         },
-        "corrigé de td d'algorithmes": {
+        "corrigé de td d'algorithmes.pdf": {
             "titre": "Corrigé de TD d'algorithmes.pdf",
             "lien_cdn": "https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/Corrigé de TD d'algorithmes.pdf",
-            "description": "Document officiel de référence : Corrigé de TD d'algorithmes.pdf. À étudier pour valider les modules."
+            "contenu_integral": "Document de référence officiel : Corrigé de TD d'algorithmes.pdf"
         }
     },
     "expressions_humaines": [
         "Franchement, bien vu !",
-        "Regarde ce polycopié sur le dépôt, tout est détaillé dedans.",
-        "On lâche rien, les partiels aux Comores se gagnent avec la rigueur !"
+        "J'ai analysé les documents du dépôt, tout est dedans.",
+        "On lâche rien, la rigueur mathématique finit toujours par payer !"
     ]
 }

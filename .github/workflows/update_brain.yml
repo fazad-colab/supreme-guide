@@ -1,30 +1,88 @@
 name: Auto-Update Locki Brain
 
 on:
-  push: # Se déclenche à chaque push, quel que soit le type de fichier ajouté ou modifié
-  workflow_dispatch: # Permet aussi de le lancer manuellement d'un clic
+  push:
+    paths:
+      - '*.pdf'
+      - 'parse_pdfs.py'
+      - 'generer_cerveau_complet.py'
+      - '.github/workflows/auto-update-locki.yml'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: Récupérer le code du dépôt
-        uses: actions/checkout@v3
+      - name: 📥 Récupérer le code du dépôt
+        uses: actions/checkout@v4
         with:
           persist-credentials: true
+          fetch-depth: 0
 
-      - name: Configurer Python
-        uses: actions/setup-python@v4
+      - name: 🐍 Configurer Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Lancer le script d'analyse
-        run: python parse_pdfs.py
+      - name: 📦 Installer les dépendances Python
+        run: |
+          python -m pip install --upgrade pip
+          pip install pymupdf pypdf pytesseract pillow
 
-      - name: Sauvegarder automatiquement le nouveau JSON sur GitHub
+      - name: 🔧 Installer Tesseract-OCR (moteur système + pack français)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-fra
+
+      - name: ✅ Vérifier les installations
+        run: |
+          python -c "import fitz; print('✅ PyMuPDF:', fitz.__doc__[:40])"
+          python -c "import pypdf; print('✅ pypdf:', pypdf.__version__)"
+          python -c "import pytesseract; print('✅ pytesseract OK')"
+          tesseract --version | head -1
+          tesseract --list-langs
+
+      - name: 🚀 Lancer le script d'analyse des PDF
+        run: |
+          if [ -f parse_pdfs.py ]; then
+            python parse_pdfs.py
+          elif [ -f generer_cerveau_complet.py ]; then
+            python generer_cerveau_complet.py
+          else
+            echo "❌ Aucun script trouvé (parse_pdfs.py ou generer_cerveau_complet.py)"
+            exit 1
+          fi
+
+      - name: 📊 Vérifier le résultat du cerveau généré
+        run: |
+          python -c "
+          import json, os
+          if not os.path.exists('locki_brain.json'):
+              print('❌ locki_brain.json introuvable !')
+              exit(1)
+          with open('locki_brain.json', encoding='utf-8') as f:
+              b = json.load(f)
+          cours = b.get('cours', {})
+          ok = sum(1 for c in cours.values() if c.get('contenu_integral'))
+          total = len(cours)
+          chars = sum(len(c.get('contenu_integral', '')) for c in cours.values())
+          print(f'📚 {ok}/{total} PDF avec texte extrait')
+          print(f'📝 {chars} caractères totaux')
+          if ok == 0:
+              print('⚠️ ATTENTION : aucun PDF n\'a produit de texte !')
+          "
+
+      - name: 💾 Sauvegarder automatiquement le nouveau JSON sur GitHub
         run: |
           git config --global user.name "Locki Bot"
           git config --global user.email "bot@omnimath.dev"
           git add locki_brain.json
-          git commit -m "🤖 Mise à jour automatique du cerveau de Locki" || exit 0
-          git push
+          if git diff --cached --quiet; then
+            echo "ℹ️ Aucun changement à commit"
+          else
+            git commit -m "🤖 Mise à jour automatique du cerveau de Locki [skip ci]"
+            git push
+          fi

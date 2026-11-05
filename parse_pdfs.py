@@ -1,5 +1,6 @@
 import os
 import json
+
 try:
     from pypdf import PdfReader
 except ImportError:
@@ -9,54 +10,67 @@ def generer_cerveau():
     dossier_actuel = "."
     cours_detectes = {}
     
-    # Extensions à exclure (scripts de code, configuration, etc.)
+    # Extensions à ignorer (code source, scripts, etc.)
     extensions_exclues = (".py", ".json", ".md", ".yml", ".git")
     
-    # Parcourir tous les fichiers du dépôt
+    print("🔄 Analyse des fichiers du dépôt supreme-guide...")
+
     for fichier in os.listdir(dossier_actuel):
         if fichier.startswith(".") or fichier.endswith(extensions_exclues):
             continue
             
         nom_cle = fichier.replace("_", " ").replace("-", " ").lower()
-        contenu_texte = ""
-        
-        # Extraction du texte si c'est un PDF et que la bibliothèque pypdf est disponible
+        texte_integral = ""
+        mots_cles = []
+
+        # Extraction intelligente du texte si c'est un PDF
         if fichier.endswith(".pdf") and PdfReader is not None:
             try:
                 lecteur = PdfReader(fichier)
-                for page in lecteur.pages:
-                    texte_page = page.extract_text()
-                    if texte_page:
-                        contenu_texte += texte_page + "\n"
+                for i, page in enumerate(lecteur.pages):
+                    t = page.extract_text()
+                    if t:
+                        texte_integral += f"\n--- Page {i+1} ---\n" + t
+                print(f"✅ Texte extrait avec succès pour : {fichier} ({len(texte_integral)} caractères)")
             except Exception as e:
-                contenu_texte = f"Erreur de lecture du PDF : {str(e)}"
-        
-        # Si ce n'est pas un PDF ou si pypdf n'est pas dispo, on met une description de base
-        if not contenu_texte:
-            contenu_texte = f"Document de référence officiel : {fichier}"
+                print(f"⚠️ Erreur de lecture sur {fichier}: {e}")
+                texte_integral = f"Document officiel : {fichier}"
+        else:
+            texte_integral = f"Fichier de référence : {fichier}"
 
-        # Stockage dans le dictionnaire avec le texte intégral extrait
+        # Génération automatique de mots-clés pertinents basés sur le nom du fichier
+        mots_cles = [m for m in nom_cle.replace(".pdf", "").split() if len(m) > 2]
+        if "analyse" in nom_cle:
+            mots_cles.extend(["limite", "derivee", "integrale", "suite", "fonction"])
+        elif "algebre" in nom_cle:
+            mots_cles.extend(["matrice", "espace", "vectoriel", "polynome", "lineaire"])
+        elif "algorithme" in nom_cle or "informatique" in nom_cle:
+            mots_cles.extend(["code", "boucle", "fonction", "variable", "structure"])
+
+        # Enregistrement dans le dictionnaire structuré pour Locki
         cours_detectes[nom_cle] = {
             "titre": fichier,
             "lien_cdn": f"https://cdn.jsdelivr.net/gh/fazad-colab/supreme-guide@main/{fichier}",
-            "contenu_integral": contenu_texte.strip()
+            "mots_cles": list(set(mots_cles)),
+            "contenu_integral": texte_integral.strip()
         }
 
-    # Structure complète du cerveau de Locki avec le contenu extrait
+    # Cerveau complet et structuré
     cerveau = {
-        "statut": "Généré automatiquement avec extraction de texte",
+        "statut": "Généré proprement avec extraction intégrale des cours",
         "cours": cours_detectes,
         "expressions_humaines": [
             "Franchement, bien vu !",
-            "J'ai analysé les documents du dépôt, tout est dedans.",
-            "On lâche rien, la rigueur mathématique finit toujours par payer !"
+            "J'ai épluché le dépôt supreme-guide, tout est dans les documents officiels.",
+            "On lâche rien, la rigueur mathématique et l'algorithmique mènent au Play Store !"
         ]
     }
 
-    # Sauvegarde dans locki_brain.json
+    # Écriture finale dans locki_brain.json
     with open("locki_brain.json", "w", encoding="utf-8") as f:
         json.dump(cerveau, f, ensure_ascii=False, indent=4)
-    print("✅ Fichier locki_brain.json généré avec succès avec le texte intégral des cours !")
+    
+    print("🚀 Fichier locki_brain.json généré et prêt à être utilisé par Locki IA !")
 
 if __name__ == "__main__":
     generer_cerveau()
